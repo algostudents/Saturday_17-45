@@ -18,3 +18,14 @@ h1 {
 iframe {
     margin: 10px;
 }
+
+body {
+    font-family: sans-serif;
+    background-image: linear-gradient(white, lightgreen);
+}
+
+.video {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
