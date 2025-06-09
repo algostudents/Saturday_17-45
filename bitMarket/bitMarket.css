@@ -1,11 +1,12 @@
 body {
     font-family: sans-serif;
-    background-color: black;
+    background-color: rgb(199, 69, 69);
 }
 
 header {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding: 15px;
     margin-bottom: 20px;
 }
@@ -17,15 +18,14 @@ header {
     padding: 15px;
     font-size: 24px;
     border-radius: 10px;
-    width: 100px;
-    height: 30px;
-    text-align: center;
+    display: block;
 }
 
 nav {
     border-top: 5px solid white;
     border-bottom: 5px solid white;
     padding: 25px 100px 25px 95px;
+    display: flex;
     justify-content: space-between;
 }
 
@@ -33,76 +33,140 @@ nav {
     font-size: 24px;
     color: white;
     text-decoration: none;
-}
-
-.navigation {
-    display: flex;
-    justify-content: space-around;
+    display: block;
 }
 
 h1 {
     text-align: center;
     color: white;
     font-size: 36px;
-    margin-top: 25px;
-    margin-bottom: 25px;
+    margin-top: 45px;
+    margin-bottom: 40px;
 }
 
-p {
+.post-text {
     font-size: 24px;
 }
 
 .info {
     display: flex;
-    justify-content: center;
     flex-wrap: wrap;
-    width: 1100px;
-    margin: 0px;
+    max-width: 1100px;
+    margin: 0 auto;
 }
 
-article {
+.post {
     background-color: white;
-    padding: 15px;
+    padding: 15px 45px 30px 45px;
     width: 400px;
-    margin: 15px;
+    margin: 20px;
+    position: relative;
 }
 
 .article-but {
     text-decoration: none;
-    background-color: grey;
+    background-color: #133aac;
     color: white;
     font-size: 24px;
     text-align: center;
     padding: 10px 75px 10px 75px;
-    margin-left: 60px;
+    display: block;
+}
+
+.full-image {
+    margin: 100px 0px 100px 0px;
+}
+
+.social {
+    display: block;
+    width: 30px;
 }
 
 footer {
+    background-color: white;
     display: flex;
-    background-color: #AC13A6;
-    padding: 30px;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 30px 30px 20px 45px;
 }
 
-footer a {
-    margin-right: 15px;
-}
-
-footer p {
+.footer-text {
     font-size: 24px;
+    margin-right: 30px;
 }
 
-#but1 {
-    background-color: #A1652D;
+.footer-text span {
+    color: #850AE5;
+    font-weight: bolder;
 }
 
-#but2 {
-    background-color: #33AA00;
+
+.aside img {
+    margin-left: 40px;
 }
 
-#but3 {
-    background-color: #AC1313;
+aside {
+    display: block;
+    align-items: center;
+    padding: 10px;
+    color: red;
+    background-color: yellow;
+    width: 150px;
+    height: 100px;
+    text-align: center;
+    border: 5px solid aqua;
+    position: fixed;
+    top: 400px;
+    right: 0px;
 }
 
-#but4 {
-    background-color: #AC13A6;
+.hit {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 100px;
+    left: 60px;
+}
+
+h1::before {
+    content: "";
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    background-image: url('https://grizly.club/uploads/posts/2023-02/1675274413_grizly-club-p-bolshoi-palets-vverkh-klipart-14.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-right: 10px;
+}
+
+h1::after {
+    content: "";
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    background-image: url('https://grizly.club/uploads/posts/2023-02/1675274413_grizly-club-p-bolshoi-palets-vverkh-klipart-14.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-right: 10px;
+}
+.address::before {
+    content: "";
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-image: url('https://cdn-icons-png.flaticon.com/512/3884/3884831.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-right: 10px;
+}
+
+.tel::before {
+    content: "";
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-image: url('https://cdn-icons-png.flaticon.com/512/597/597359.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-right: 10px;
 }
